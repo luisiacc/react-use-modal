@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+React	dist/react-use-modal.cjs.development.js	/^var React = require('react');$/;"	v
+Thing	dist/react-use-modal.cjs.development.js	/^var Thing = function Thing() {$/;"	f
+Thing	dist/react-use-modal.esm.js	/^var Thing = function Thing() {$/;"	f
+e	dist/react-use-modal.cjs.production.min.js	/^"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react");exports.Thing=function(){return e.createElement("div",null,"the snozzberries taste like snozzberries")};$/;"	v
+exports.Thing	dist/react-use-modal.cjs.production.min.js	/^"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react");exports.Thing=function(){return e.createElement("div",null,"the snozzberries taste like snozzberries")};$/;"	f
