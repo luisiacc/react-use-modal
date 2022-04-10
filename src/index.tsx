@@ -1,5 +1,4 @@
 import * as React from "react"
-import { v4 as uuid4 } from "uuid"
 import type {
   ModalContextType,
   ModalData,
@@ -30,7 +29,7 @@ export function ModalProvider(props: { children: React.ReactNode }) {
     if (isOpen(name)) {
       throw new Error(`There is already a modal with this name (${name})`)
     }
-    setStack([...stack, { id: uuid4(), name, data, relay }])
+    setStack([...stack, { id: uuid(), name, data, relay }])
   }
 
   /**
@@ -67,7 +66,7 @@ export function ModalProvider(props: { children: React.ReactNode }) {
       throw new Error(`There is already a modal with this name (${name})`)
     }
     if (stack.length) {
-      setStack([...stack.slice(0, pointer), { id: uuid4(), name, data, relay }])
+      setStack([...stack.slice(0, pointer), { id: uuid(), name, data, relay }])
     }
   }
 
@@ -167,4 +166,9 @@ export function ModalController({
   }, dependencies)
 
   return null
+}
+
+function uuid() {
+  // @ts-ignore
+  return window.crypto.randomUUID()
 }
