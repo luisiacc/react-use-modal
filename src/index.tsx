@@ -1,6 +1,6 @@
 import * as React from "react"
 import { v4 as uuid4 } from "uuid"
-import {
+import type {
   ModalContextType,
   ModalData,
   ModalRenderCallback,
