@@ -8,6 +8,11 @@
 npm install --save react-use-modal
 ```
 
+## Quick notes
+
+The library doesn't care how you render your modal, it just handles the state to render it, and optionally pass data
+to it if required, sort of like `react-query` does on queries.
+
 ## Usage
 
 This is just a showcase, please refer to the docs to see how to cover most use cases
