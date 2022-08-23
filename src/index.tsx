@@ -213,12 +213,6 @@ export function ModalController({
   dependencies?: any[]
 }) {
   const modals = useModal()
-  const location = { pathname: "" }
-
-  React.useEffect(() => {
-    modals.pop(name)
-    // eslint-disable-next-line
-  }, [location?.pathname])
 
   React.useEffect(() => {
     modals.register({ name, render, replace: true })
