@@ -2,7 +2,7 @@ import * as React from "react"
 
 export type ModalData = Record<string, any> | null
 
-export type ModalRenderObject = {
+export interface ModalRenderObject {
   name: string
   data: ModalData
   submit: () => void
@@ -16,7 +16,7 @@ export type ModalRenderCallback = (
   modalObject: ModalRenderObject
 ) => React.ReactNode
 
-export type ModalContextType = {
+export interface ModalContextType {
   anyOpen: boolean
   push: (name: string, data?: ModalData) => void
   relay: (name: string, data?: ModalData) => void
@@ -31,11 +31,17 @@ export type ModalContextType = {
   pop: (name: string | null, relay?: boolean) => void
 }
 
-export type ModalStackItem = {
+export interface ModalStackItem {
   id: string
   name: string
   data: ModalData
   relay: boolean
+}
+
+export interface ModalControllerProps {
+  name: string
+  render: ModalRenderCallback
+  dependencies?: ReadonlyArray<unknown>
 }
 
 const ModalContext = React.createContext<ModalContextType>(
@@ -207,11 +213,7 @@ export function ModalController({
   name,
   render,
   dependencies = []
-}: {
-  name: string
-  render: ModalRenderCallback
-  dependencies?: any[]
-}) {
+}: ModalControllerProps) {
   const modals = useModal()
 
   React.useEffect(() => {
