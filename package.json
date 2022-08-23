@@ -27,7 +27,7 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "name": "react-use-modal",
+  "name": "@luisiacc/react-use-modal",
   "author": "luisiacc",
   "module": "dist/react-use-modal.esm.js",
   "size-limit": [
