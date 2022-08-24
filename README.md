@@ -44,3 +44,10 @@ function Example(props: any) {
 }
 ```
 
+- If you are using the `<ModalController />` inside a router, and your modal does some kind of redirection,
+you should import `ModalController` from `@luisiacc/use-react-modal/router` like:
+
+```ts
+import {ModalController} from "@luisiacc/use-react-modal/router"
+```
+
