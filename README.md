@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-npm install --save react-use-modal
+npm install --save @luisiacc/react-use-modal
 ```
 
 ## Quick notes
