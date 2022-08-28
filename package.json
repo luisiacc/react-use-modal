@@ -33,7 +33,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-push": "yarn test"
     }
   },
   "name": "@luisiacc/react-use-modal",
