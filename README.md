@@ -21,7 +21,7 @@ This is just a showcase, please refer to the docs to see how to cover most use c
 import React from "react"
 
 import SomeModal from "some-modal"; // I'm just making this up, imagine is a real modal
-import { useModal, ModalController } from "react-use-modal"
+import { useModal, ModalController } from "@luisiacc/react-use-modal"
 
 function Example(props: any) {
   const modals = useModal()
