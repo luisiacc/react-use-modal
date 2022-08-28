@@ -225,6 +225,5 @@ export function ModalController({
 }
 
 function uuid() {
-  // @ts-ignore
-  return window.crypto.randomUUID()
+  return Math.random().toString(16).substr(2, 10)
 }
